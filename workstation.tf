@@ -1,6 +1,6 @@
 resource "aws_instance" "workstation" {
     ami = local.ami_id
-    instance_type = "t3.medium"
+    instance_type = "t3.micro"
     vpc_security_group_ids = [aws_security_group.workstation.id]
     iam_instance_profile = aws_iam_instance_profile.workstation.name
     # need more for terraform
