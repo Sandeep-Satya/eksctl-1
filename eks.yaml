@@ -7,9 +7,9 @@ metadata:
 managedNodeGroups:
   - name: roboshop-dev
     # instanceTypes: ["t3.small", "t3.medium", "t3.micro", ]
-    instanceTypes: ["t3.medium", ]
+    instanceTypes: ["t3.medium", "t3.small",]
     desiredCapacity: 3 #  by default this value is 3
-    minSize: 3
+    minSize: 1
     maxSize: 3
 
     # spot: true
